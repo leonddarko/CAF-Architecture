@@ -1,0 +1,693 @@
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222222;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F1C410;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+/*** Zoom on Hover ***/
+.zoom {
+  transition: ease-in-out 0.2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.09); /* IE 9 */
+  -webkit-transform: scale(1.09); /* Safari 3-8 */
+  transform: scale(1.09);
+}
+
+/* Top Navigation */
+
+.topnav {
+    overflow: visible ;
+    background-color: #222222;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+  }
+  
+  .topnav .nav-container{
+    padding: 5px 5%;
+  }
+
+  .topnav a.navlogo{
+    padding: 0;
+  }
+
+  a.navlogo img {
+    padding: 8px;
+    height: 44px;
+  }
+
+  .topnav a {
+    float: left;
+    color: #F1C410;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 11px;
+  }
+  
+  .topnav a:hover {
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .topnav div.items-right{
+   float:right;
+  }
+
+  .topnav .no-hover{
+    cursor: default;
+  }
+  @media screen and (max-width: 600px) {
+    .topnav{
+      padding: 8px 0;
+    }
+
+    .topnav .nav-container{
+      padding: 5px 15px;
+    }
+  }
+
+  @media screen and (max-width: 240px) {
+    .topnav{
+      padding: 5px 0;
+    }
+
+    .topnav .nav-container{
+      padding: 5px 15px;
+    }
+
+    a.navlogo img {
+      padding: 8px;
+      height: 41px;
+    }
+
+  }
+  
+
+  .dropdown {
+    float: left;
+    /* overflow: hidden; */
+  }
+
+  .dropdown .dropbtn {
+    font-size: 11px;  
+    border: none;
+    outline: none;
+    color: #F1C410;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    border: 1px solid grey;
+    display: none;
+    position: absolute;
+    top: 45px;
+    background-color: #222222;
+    min-width: 150px;
+    z-index: 100;
+  }
+
+
+  .dropdown-content a {
+    float: none;
+    color: #F1C410;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 199;
+  }
+
+
+  div.navbar {
+    width: 100%;
+    overflow: hidden;
+    background-color: #F1C410;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .navbar a {
+    display:inline-block;
+    float: none;
+    color: #222222;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .navbar a:hover {
+    color: #222222;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    transition: 0.3s;
+  }
+  
+  
+  /* Top Navigation */
+
+/* Left Sidebar for smaller screens */
+.sidenav {
+  display: none;
+  height: 100%;
+  width: 255px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left:0;
+  background-color: #222222;
+  overflow-x: hidden;
+  transition: 0.4s;
+  /* padding-top: 10px; */
+}
+
+.sidenav #closeBtn:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.sidenav-title{
+  /* border-top: 1px solid black; */
+  padding: 5px;
+}
+
+
+.sidenav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-size: 14px;
+  color: lightgrey;
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid black;
+}
+
+.sidenav a:hover {
+  color: #F1C410;
+}
+
+@media screen and (max-height: 450px) {
+  /* .sidenav {padding-top: 15px;} */
+  .sidenav a {font-size: 12px;}
+}
+
+.mail-phone a {
+  display: inline;
+  border-bottom: unset;
+  color: #F1C410;
+}
+
+.sidenav-socials a {
+  display: inline-block;
+  border-bottom: unset;
+  bottom: 0;
+}
+
+.sidenav-socials {
+  margin-top: 100%;
+}
+/* Left Sidebar for smaller screens */
+
+
+  /* Carousel */
+  .carousel-container{
+    position: relative;
+    height: auto;
+    background-color: wheat;
+  }
+
+  .mySlides{
+    display: none;
+    position: relative;
+    background-color: black;
+    height: 670px;
+  }
+
+  .mySlideBackgroundImage01{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/pop ceiling/pop-ceiling-4.jpg");
+  }
+
+  .mySlideBackgroundImage02{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/wall-shelves.jpg");
+  }
+
+  .mySlideBackgroundImage03{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/plasterboard\ ceiling/plasterboard-ceiling-2.jpg");
+  }
+
+  .myCaptionBox{
+    border-radius: 10px;
+    border: 0px solid #F1C410;
+    width: 40%;
+    padding: 40px;
+    bottom: 20%;
+    right: 5%;
+    position: absolute;
+    background-color:#222222;
+    opacity: 0.9;
+  }
+  .myCaptionBox a{
+    text-decoration: unset;
+  }
+
+  .mini-title{
+    margin: 0;
+    color: white;
+    font-size: 13px;
+  }
+
+  .title{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+  }
+
+ 
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 1px;
+  background-color: #222222;
+  border-radius: 2px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots-container{
+  right: 5%;
+  position: absolute;
+  bottom: 20px;
+}
+
+.active {
+  background-color: #F1C410;
+}
+
+  /* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media (max-width:992px) and (min-width:601px){
+  .mySlides{
+    display: none;
+    position: relative;
+    background-color: black;
+    height: 500px;
+  }
+
+  
+  .myCaptionBox{
+    width: 50%;
+    padding: 40px;
+    bottom: 15%;
+    right: 5%;
+  }
+
+  .title{
+    font-size: 30px;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .mySlides{
+    height: 450px;
+  }
+
+  .myCaptionBox{
+    width: 90%;
+    padding: 20px;
+    bottom: 10%;
+    right: 5%;
+  }
+
+  .mini-title{
+    font-size: 11px;
+  }
+
+  .title{
+    font-size: 20px;
+  }   
+
+}
+
+/* Carousel */
+
+.section-heading{
+  background-color: white;
+}
+
+.section-heading h1{
+  font-weight: 700;
+}
+
+.section-mini-heading{
+  font-size: 12px;
+}
+
+.section-container{
+  padding: 4% 4%;
+  opacity: 0.93;
+}
+
+.what-we-do-card-link{
+  text-decoration: none;
+}
+
+.what-we-do-card-link:hover .long-arrow-right {
+  margin-left: 10px;
+  color: #F1C410;
+  transition: ease-in-out .4s;
+}
+
+.wallpaper{
+  background-image: url("../images/dark-cement.jpg");
+}
+
+.wallpaper02{
+  background-image: url("../images/glass-wallpaper.jpg");
+}
+
+/* Cards */
+.other-cards .heading{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.other-cards .supporting-text{
+  font-size: 12px;
+}
+.other-cards a{
+  text-decoration: unset;
+}
+
+@media screen and (max-width: 240px) {
+  .other-cards .heading{
+    font-size: 11px;
+  }
+
+  .other-cards .supporting-text{
+    font-size: 11px;
+  }
+
+}
+
+.mokas-margin-top{
+  margin-top: 50px;
+}
+
+
+/* Footer */
+
+.w3-ul a {
+  text-decoration: unset;
+}
+
+.w3-ul a:hover{
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #F1C410;
+}
+
+.contact-card {
+  padding: 30px;
+}
+
+h6, .contact-card h2{
+  font-weight: 700;
+}
+
+#footer-image {
+  width: 40%;
+}
+
+.footernav {
+  overflow: hidden;
+  background-color:  #222222;
+  padding: 1% 4%;
+}
+
+.footernav span {
+ font-size: 20px;
+ font-weight: 900;
+ font-family: 'Poppins', sans-serif;
+}
+
+
+.footernav .items-right i {
+  padding: 10px;
+  color: #F1C410;
+  /* border-radius: 2px; */
+  /* border: 1px solid #F1C410; */
+}
+
+.footernav a {
+  float: left;
+  color: #F1C410;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footernav .items-right{
+float:right;
+}
+
+.footernav a:hover {
+  color: black;
+}
+
+.footer-container{
+  padding: 1% 4%;
+}
+
+.footer-container h4{
+  color: #222222;
+  font-weight: 900;
+}
+
+.footer-container p{
+  font-size: 13px;
+}
+
+/* About Page */
+
+.about-container{
+  padding: 9% 22% 5%;
+}
+
+.about-image {
+  width: 20%;
+}
+
+.underline{
+  text-decoration: underline;
+  text-decoration-color: #F1C410;
+}
+
+.mission-text{
+  font-size: 1.2em;
+  color: grey;
+}
+
+@media screen and (max-width: 600px) {
+  .about-container{
+    margin-top: 8%;
+    padding: 22% 10%;
+  }
+
+  .about-container h1 {
+    font-size: 32px;
+  }
+  .about-image {
+    width: 30%;
+  }
+}
+
+
+/* Description Pages Ceiling, Flooring E.T.C */
+
+.desc-container{
+  padding: 8% 6% 4%;
+}
+
+@media screen and (max-width: 600px) {
+  .desc-container{
+    padding: 15% 6% 4%;
+  }
+
+  .banner-text h1 {
+    font-size: 20px;
+  } 
+}
+
+.vertical-menu {
+  width: 100%;
+  background-color:white;
+  border:1px solid #B5BCC6;
+  border-radius: 6px;
+}
+
+.vertical-menu a {
+  background-color: transparent;
+  border-left: 1px solid #F1C410;
+  color: #222222;
+  display: block;
+  padding: 10px;
+  margin:12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  color:#F1C410;
+  background-color: #222222;
+  -ms-transform: scale(1.09); /* IE 9 */
+  -webkit-transform: scale(1.09); /* Safari 3-8 */
+  transform: scale(1.09);
+  transition: ease-in-out 0.2s;
+}
+
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 280px;
+}
+
+.construction-page-banner-image{
+  background-image: url("/images/construction/construction.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.ceiling-page-banner-image{
+  background-image: url("/images/pop ceiling/pop-ceiling-4.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.flooring-page-banner-image{
+  background-image: url("/images/floors/floor.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ARD-page-banner-image{
+  background-image: url("/images/3d images/3d-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.walls-page-banner-image{
+  background-image: url("/images/wall decor/wall-decor-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.banner-text{
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  padding: 10px;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  right: 20px;
+}
+
+/* Side Navigation Accordion  */
+
+/* .accordion {
+  background-color: black;
+} */
+
+.accordion:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.panel {
+  background-color: black;
+  border-left: 1px solid #F1C410;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.active, .accordion:hover {
+  background-color: black;
+  color: white;
+}

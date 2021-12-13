@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAF Architecture&reg;</title>
+    <meta name="author" content="Leon Darko">
+    <meta name="description" content="A Design and Build Company">
+    <meta name="keywords" content="Interior Design, Exterior Design">
+
+    <!--Embeded Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+
+    <!-- Font-awesome and Google Icons -->
+    <script src="https://kit.fontawesome.com/dcd356c426.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- External Css  -->
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "608283529275745");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v11.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+    <!-- Top Navigation -->
+    <div class="topnav" id="myNavbar">
+        <div class="nav-container">
+            <a id="bars" class="" href="javascript:void(0)"><i class="fas fa-bars"></i></a>
+            <a class="navlogo" href="/"><img class="w3-image" src="images/logos/cafarchitecture-logo.png"
+                    alt="Site Logo"></a>
+            <div class="w3-hide-small">
+                <a href="https://www.instagram.com/cafarchitecture/"><i class="fab fa-instagram"></i></a>
+                <a href="https://web.facebook.com/cafarchitecture"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/cafarchitecture"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <div class="items-right">
+                <div class="dropdown">
+                    <a class="w3-hide-small w3-hide-medium dropbtn" href="/">HOME &nbsp;<i
+                            class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content w3-round w3-card w3-animate-opacity">
+                        <a class="w3-hide-small w3-hide-medium" href="/#whatwedo"> <i class="far fa-bookmark"></i>
+                            &nbsp; WHAT WE DO</a>
+                        <a class="w3-hide-small w3-hide-medium" href="/#clients"> <i class="far fa-bookmark"></i> &nbsp;
+                            CLIENTS</a>
+                        <a class="w3-hide-small w3-hide-medium" href="/#brands"> <i class="far fa-bookmark"></i> &nbsp;
+                            BRANDS</a>
+                        <a class="w3-hide-small w3-hide-medium" href="/#contact"> <i class="far fa-bookmark"></i> &nbsp;
+                            CONTACT</a>
+                    </div>
+                </div>
+                <a class="w3-hide-small w3-hide-medium" href="/about">ABOUT</a>
+                <a href="mailto:cafarchitectureinc@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+233207936666"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+        <div class="navbar w3-hide-medium w3-hide-small">
+            <a href="/construction"><i class="fas fa-hard-hat w3-text-black"></i> CONSTRUCTION</a>
+            <a href="/ceiling"><i class="fas fa-hard-hat w3-text-black"></i> CEILING</a>
+            <a href="/flooring"><i class="fas fa-hard-hat w3-text-black"></i> FLOORING</i></a>
+            <a href="/wall-decor"><i class="fas fa-hard-hat w3-text-black"></i> WALL DECOR</i></a>
+            <a href="/architectural-drawing"><i class="fas fa-hard-hat w3-text-black"></i> AR. DRAWING</i></a>
+        </div>
+    </div>
+    <!-- Top Navigation -->
+
+    <!-- Left Sidebar for smaller screens -->
+    <div id="mySidenav" class="sidenav w3-animate-left w3-card">
+        <div class="w3-padding-medium w3-right-align w3-text-white w3-padding-12">
+            <i id="closeBtn" class="fas fa-times "></i>
+        </div>
+        <div class="sidenav-title">
+            <img class="w3-image" src="images/logos/cafarchitecture-logo.png" alt="Site Logo">
+        </div>
+        <div class="mail-phone w3-padding-10 w3-center">
+            <a href="mailto:cafarchitectureinc@gmail.com"><i class="fas fa-envelope w3-large"></i></a>
+            <a href="tel:+233207936666"><i class="fas fa-phone w3-large"></i></a>
+        </div>
+        <a class="accordion"><i class="fas fa-home"></i>&nbsp; HOME <i
+                class="fas fa-chevron-down w3-tiny w3-right"></i></a>
+        <div class="panel">
+            <a href="/#whatwedo"><i class="fas fa-bookmark w3-tiny w3-text-yellow"></i>&nbsp; WHAT WE DO</a>
+            <a href="/#clients"><i class="fas fa-bookmark w3-tiny w3-text-yellow"></i>&nbsp; CLIENTS</a>
+            <a href="/#brands"><i class="fas fa-bookmark w3-tiny w3-text-yellow"></i>&nbsp; BRANDS</a>
+            <a href="/#contact"><i class="fas fa-bookmark w3-tiny w3-text-yellow"></i>&nbsp; CONTACT</a>
+        </div>
+        <a class="accordion"><i class="fas fa-toolbox"></i>&nbsp; SERVICES <i
+                class="fas fa-chevron-down w3-tiny w3-right"></i></a>
+        <div class="panel">
+            <a href="/construction"><i class="fas fa-hard-hat w3-text-yellow w3-tiny"></i>&nbsp; CONSTRUCTION</i></a>
+            <a href="/ceiling"><i class="fas fa-hard-hat w3-text-yellow w3-tiny"></i>&nbsp; CEILING</a>
+            <a href="/flooring"><i class="fas fa-hard-hat w3-text-yellow w3-tiny"></i>&nbsp; FLOORS</a>
+            <a href="/wall-decor"><i class="fas fa-hard-hat w3-text-yellow w3-tiny"></i>&nbsp; WALL DECOR</a>
+            <a href="/architectural-drawing"><i class="fas fa-hard-hat w3-text-yellow w3-tiny"></i>&nbsp; AR.
+                DRAWING</a>
+        </div>
+
+        <a href="/about"><i class="fas fa-info-circle"></i>&nbsp; ABOUT</a>
+
+        <div class="sidenav-socials w3-center">
+            <span class="w3-text-yellow">Social Profiles</span> <br>
+            <a href="https://www.instagram.com/cafarchitecture/"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.facebook.com/cafarchitecture"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/cafarchitecture"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    <!-- Left Sidebar for smaller screens -->
